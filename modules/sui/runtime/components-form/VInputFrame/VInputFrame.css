@@ -1,0 +1,70 @@
+:root {
+  --v-message-height: 20px;
+}
+
+.v-input-frame {
+  display: grid;
+  flex: 1 1 auto;
+  line-height: 1.5;
+}
+
+.v-input-frame--vertical {
+  grid-template-rows: max-content auto max-content;
+  grid-template-columns: min-content;
+  grid-template-areas: 'append' 'control' 'prepend';
+}
+
+.v-input-frame--horizontal {
+  grid-template-rows: auto auto auto;
+  grid-template-columns: max-content minmax(0, 1fr) max-content;
+  grid-template-areas:
+    '. label .'
+    'prepend control append'
+    '. messages .';
+}
+
+.v-input-frame__label {
+  grid-area: label;
+}
+
+.v-input-frame__prepend {
+  grid-area: prepend;
+}
+
+.v-input-frame__append {
+  grid-area: append;
+}
+
+.v-input-frame__control {
+  display: flex;
+  grid-area: control;
+  justify-content: center;
+}
+
+.v-input-frame__control input {
+  flex: 1 1 auto;
+  min-width: 1px;
+}
+
+.v-input-frame--disabled {
+  pointer-events: none;
+}
+
+.v-input-frame__messages {
+  grid-area: messages;
+  transition: height 0.2s var(--v-ease-in-out);
+  height: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.v-input-frame__messages:has(.v-message) {
+  height: calc(var(--v-message-height) * var(--v-message-count));
+}
+
+.v-input-frame__prepend,
+.v-input-frame__append {
+  display: flex;
+}

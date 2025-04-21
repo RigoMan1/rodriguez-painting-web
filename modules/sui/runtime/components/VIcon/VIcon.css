@@ -1,0 +1,54 @@
+:root {
+  --v-icon-scale-base: 1rem;
+  --v-icon-scale-factor: 1.25;
+  --v-icon-size-xs: calc(var(--v-icon-scale-base) * 1);
+  --v-icon-size-sm: calc(var(--v-icon-scale-base) * var(--v-icon-scale-factor));
+  --v-icon-size-base: calc(var(--v-icon-scale-base) * pow(var(--v-icon-scale-factor), 2));
+  --v-icon-size-lg: calc(var(--v-icon-scale-base) * pow(var(--v-icon-scale-factor), 3));
+  --v-icon-size-xl: calc(var(--v-icon-scale-base) * pow(var(--v-icon-scale-factor), 4));
+  --v-icon-size: var(--v-icon-size-base);
+}
+
+.v-icon {
+  align-items: center;
+  display: inline-flex;
+  font-feature-settings: 'liga';
+  justify-content: center;
+  letter-spacing: normal;
+  line-height: 1;
+  position: relative;
+  text-indent: 0;
+  text-align: center;
+  user-select: none;
+  vertical-align: middle;
+}
+
+.v-icon--size-xs {
+  --v-icon-size: var(--v-icon-size-xs);
+}
+
+.v-icon--size-sm {
+  --v-icon-size: var(--v-icon-size-sm);
+}
+
+.v-icon--size-base {
+  --v-icon-size: var(--v-icon-size-base);
+}
+
+.v-icon--size-lg {
+  --v-icon-size: var(--v-icon-size-lg);
+}
+
+.v-icon--size-xl {
+  --v-icon-size: var(--v-icon-size-xl);
+}
+
+/* expose --v-icon-size to other components */
+.v-input-frame .v-icon,
+.v-field .v-icon,
+.v-button .v-icon,
+.v-icon[class*='v-icon--'] {
+  font-size: var(--v-icon-size);
+  height: var(--v-icon-size);
+  width: var(--v-icon-size);
+}

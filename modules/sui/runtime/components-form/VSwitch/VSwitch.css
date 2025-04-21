@@ -1,0 +1,59 @@
+:root {
+  /* Size tokens */
+  --v-switch-size: 20px;
+  --v-switch-rounded: 999px;
+
+  /* Transition tokens */
+  --v-switch-transition-duration: 0.2s;
+  --v-switch-easing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.v-switch__thumb {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--v-switch-rounded);
+  width: var(--v-switch-size);
+  height: var(--v-switch-size);
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.v-switch__track {
+  cursor: pointer;
+  border-radius: var(--v-switch-rounded);
+  width: calc(var(--v-switch-size) * 2 + calc(var(--v-switch-size) / 5));
+  height: calc(var(--v-switch-size) + calc(var(--v-switch-size) / 5));
+}
+
+.v-switch .v-selection-control__input {
+  position: absolute;
+  transform: translateX(calc(var(--v-switch-size) / -2));
+  transition: var(--v-switch-transition-duration) transform var(--v-switch-easing);
+  border-radius: var(--v-switch-rounded);
+}
+
+.v-switch[data-active='true'] .v-selection-control__input {
+  transform: translateX(calc(var(--v-switch-size) / 2));
+}
+
+/* Track icons */
+.v-switch {
+  &__track {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__track-true {
+    margin-inline-end: auto;
+  }
+
+  &__track-false {
+    margin-inline-start: auto;
+  }
+
+  .v-icon {
+    display: block;
+  }
+}

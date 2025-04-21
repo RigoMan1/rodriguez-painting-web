@@ -1,0 +1,55 @@
+:root {
+  --v-button-scale: 2.5rem;
+}
+
+.v-button {
+  display: inline-grid;
+  grid-template-areas: 'prepend content append';
+
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+
+  vertical-align: middle;
+}
+
+.v-button__content {
+  grid-area: content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.v-button__append {
+  grid-area: append;
+}
+
+.v-button__prepend {
+  grid-area: prepend;
+}
+
+.v-button__content,
+.v-button__prepend,
+.v-button__append {
+  display: flex;
+  align-items: center;
+}
+
+.v-button--icon-only {
+  padding: 0 !important;
+
+  width: var(--v-button-scale) !important;
+  height: var(--v-button-scale) !important;
+}
+
+.v-button--stacked {
+  grid-template-areas: 'prepend' 'content' 'append';
+  white-space: normal;
+  justify-items: center;
+  align-content: center;
+}
+
+.v-button[data-state='loading'],
+.v-button[data-state='disabled'] {
+  pointer-events: none;
+}

@@ -1,0 +1,19 @@
+@import './v-button.css';
+@import './v-typography.css';
+@import './v-field.css';
+@import './v-switch.css';
+
+html {
+  color-scheme: dark;
+  background-color: #17181e;
+  color: #e1e3eb;
+}
+
+.bd,
+[bd] {
+  border: 1px solid magenta !important;
+}
+
+.container {
+  @apply px-2 sm:px-0;
+}

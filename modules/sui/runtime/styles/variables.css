@@ -1,0 +1,25 @@
+:root {
+  --v-scrim-color: #35495e;
+  --v-theme-overlay-multiplier: 1;
+  --v-scrollbar-offset: 0px;
+
+  --v-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --v-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --v-ease-in: cubic-bezier(0.4, 0, 1, 1);
+
+  --v-opacity-border: 0.12;
+  --v-opacity-high-emphasis: 0.87;
+  --v-opacity-medium-emphasis: 0.6;
+  --v-opacity-disabled: 0.38;
+  --v-opacity-idle: 0.04;
+  --v-opacity-hover: 0.04;
+  --v-opacity-focus: 0.12;
+  --v-opacity-selected: 0.08;
+  --v-opacity-activated: 0.12;
+  --v-opacity-pressed: 0.12;
+  --v-opacity-dragged: 0.08;
+
+  --v-shadow-key-umbra-opacity: rgba(0, 0, 0, 0.2);
+  --v-shadow-key-penumbra-opacity: rgba(0, 0, 0, 0.14);
+  --v-shadow-key-penumbra-opacity: rgba(0, 0, 0, 0.12);
+}

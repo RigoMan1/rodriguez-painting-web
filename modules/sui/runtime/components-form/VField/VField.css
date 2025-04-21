@@ -1,0 +1,33 @@
+.v-field {
+  display: grid;
+  grid-template-columns: min-content minmax(0, 1fr) min-content min-content;
+  grid-template-areas: 'prepend-inner field clear append-inner';
+  grid-area: control;
+  flex: 1 0;
+  contain: layout;
+
+  &__prepend-inner {
+    grid-area: prepend-inner;
+  }
+
+  &__field {
+    grid-area: field;
+  }
+
+  &__clear {
+    grid-area: clear;
+  }
+
+  &__append-inner {
+    grid-area: append-inner;
+  }
+
+  textarea,
+  input {
+    display: flex;
+    position: relative;
+    grid-area: field;
+    flex: 1 0;
+    align-items: flex-start;
+  }
+}

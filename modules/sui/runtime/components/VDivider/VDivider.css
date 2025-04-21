@@ -1,0 +1,51 @@
+:root {
+  --v-divider-color: ;
+  --v-divider-thickness: 1px;
+  --v-divider-opacity: 0.2;
+  --v-divider-gap: 16px;
+}
+
+.v-hr {
+  display: block;
+  flex: 1 1 100%;
+  border-color: var(--v-divider-color, inherit);
+  opacity: var(--v-divider-opacity);
+  border-width: 0 0 var(--v-divider-thickness) 0;
+}
+
+.v-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.v-divider__content {
+  padding: 0 var(--v-divider-gap);
+}
+
+.v-hr--vertical {
+  border-width: 0 var(--v-divider-thickness) 0 0;
+
+  height: auto;
+  max-height: 100%;
+
+  align-self: stretch;
+  display: inline-flex;
+  height: auto;
+  vertical-align: text-bottom;
+  width: 0px;
+  max-width: 0px;
+}
+
+.v-divider--vertical {
+  flex-direction: column;
+  height: 100%;
+
+  .v-hr {
+    margin: 0 auto;
+  }
+
+  .v-divider__content {
+    margin: var(--v-divider-gap) 0;
+  }
+}

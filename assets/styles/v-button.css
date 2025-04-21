@@ -1,0 +1,145 @@
+.v-button {
+  @apply inline-flex cursor-pointer items-center justify-center capitalize outline-none transition-colors duration-200;
+  @apply rounded-md font-medium;
+
+  &__content {
+    @apply inline-flex items-center;
+  }
+
+  &__prepend {
+    @apply mr-1;
+  }
+
+  &__append {
+    @apply ml-1;
+  }
+
+  &--icon-only {
+    @apply h-10 w-10 justify-center p-2;
+  }
+
+  &--stacked {
+    @apply flex-col p-3;
+  }
+
+  &--size-xs {
+    @apply h-6 px-1 text-xs;
+    --v-icon-size: 1rem;
+    --v-button-scale: 1.5rem;
+  }
+
+  &--size-sm {
+    @apply h-8 px-2 text-sm;
+    --v-icon-size: 1.25rem;
+    --v-button-scale: 2rem;
+  }
+
+  &--size-base {
+    @apply h-10 px-3 text-sm;
+    --v-icon-size: 1.5rem;
+    --v-button-scale: 2.5rem;
+  }
+
+  &--size-lg {
+    @apply h-12 px-4 text-base;
+    --v-icon-size: 2rem;
+    --v-button-scale: 3rem;
+  }
+
+  &--size-xl {
+    @apply h-14 px-5 text-lg;
+    --v-icon-size: 2.5rem;
+    --v-button-scale: 3.5rem;
+  }
+
+  &--color-primary {
+    /* @apply bg-zinc-100 text-zinc-800; */
+    /* @apply bg-blue-500 text-white; */
+    /* @apply bg-zinc-100; */
+    @apply bg-primary-100;
+
+    &.v-button--variant-text {
+      @apply hover:bg-primary-500/20;
+    }
+
+    &.router-link-active {
+      @apply bg-primary-500/50;
+    }
+
+    /* apply the text-zinc-800 to all except variants outlined, text, and link */
+    &:not(.v-button--variant-outlined):not(.v-button--variant-text):not(
+        .v-button--variant-link
+      ):not(.v-button--variant-secondary) {
+      @apply text-zinc-800;
+    }
+  }
+
+  &--color-secondary {
+    @apply bg-secondary-100 text-secondary-800;
+  }
+
+  &--color-success {
+    @apply bg-emerald-500 text-white;
+  }
+
+  &--color-neutral {
+    @apply bg-zinc-800 text-white;
+  }
+
+  &--color-danger {
+    @apply bg-rose-500 text-white;
+  }
+
+  &--color-warn {
+    @apply bg-amber-500 text-white;
+  }
+
+  &--color-zinc {
+    @apply bg-zinc-700 text-gray-100;
+  }
+
+  &--variant-primary {
+    @apply shadow-md;
+  }
+
+  &--variant-secondary {
+    @apply bg-opacity-50 shadow-sm;
+  }
+
+  &--variant-outlined {
+    @apply border border-white/25 bg-transparent shadow-none;
+  }
+
+  &--variant-text {
+    @apply bg-transparent shadow-none;
+    @apply hover:underline;
+  }
+
+  &--variant-link {
+    @apply bg-transparent text-base underline shadow-none;
+  }
+
+  &[data-state='loading'] {
+    @apply cursor-wait opacity-70;
+  }
+
+  &[data-state='disabled'] {
+    @apply pointer-events-none cursor-not-allowed opacity-50 grayscale;
+  }
+
+  &[data-state='active'] {
+    @apply shadow-inner;
+  }
+
+  &[data-state='idle'] {
+    @apply opacity-100;
+  }
+
+  &:hover:not([data-state='disabled']) {
+    @apply brightness-110 filter;
+  }
+
+  &:focus:not([data-state='disabled']) {
+    @apply outline-none ring-1 ring-primary-500 ring-offset-1;
+  }
+}

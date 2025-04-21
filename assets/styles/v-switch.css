@@ -1,0 +1,172 @@
+.v-switch {
+  &--color-primary & {
+    &__track {
+      @apply bg-gray-200;
+    }
+
+    &__thumb {
+      @apply bg-primary-500;
+    }
+  }
+
+  &--color-primary[data-active='true'] & {
+    &__track {
+      @apply bg-primary-500;
+    }
+
+    &__thumb {
+      @apply bg-primary-200;
+    }
+  }
+
+  &--color-secondary & {
+    &__track {
+      @apply bg-gray-200;
+    }
+
+    &__thumb {
+      @apply bg-gray-500;
+    }
+  }
+
+  &--color-secondary[data-active='true'] & {
+    &__track {
+      @apply bg-gray-500;
+    }
+
+    &__thumb {
+      @apply bg-gray-200;
+    }
+  }
+
+  &--color-success & {
+    &__track {
+      @apply bg-green-200;
+    }
+
+    &__thumb {
+      @apply bg-green-500;
+    }
+  }
+
+  &--color-success[data-active='true'] & {
+    &__track {
+      @apply bg-green-500;
+    }
+
+    &__thumb {
+      @apply bg-green-200;
+    }
+  }
+
+  &--color-danger & {
+    &__track {
+      @apply bg-red-200;
+    }
+
+    &__thumb {
+      @apply bg-red-500;
+    }
+  }
+
+  &--color-danger[data-active='true'] & {
+    &__track {
+      @apply bg-red-500;
+    }
+
+    &__thumb {
+      @apply bg-red-200;
+    }
+  }
+
+  &--color-warn & {
+    &__track {
+      @apply bg-yellow-200;
+    }
+
+    &__thumb {
+      @apply bg-yellow-500;
+    }
+  }
+
+  &--color-warn[data-active='true'] & {
+    &__track {
+      @apply bg-yellow-500;
+    }
+
+    &__thumb {
+      @apply bg-yellow-200;
+    }
+  }
+
+  &--color-info & {
+    &__track {
+      @apply bg-blue-200;
+    }
+
+    &__thumb {
+      @apply bg-blue-500;
+    }
+  }
+
+  &--color-info[data-active='true'] & {
+    &__track {
+      @apply bg-blue-500;
+    }
+
+    &__thumb {
+      @apply bg-blue-200;
+    }
+  }
+
+  &--size-xs {
+    --v-switch-size: 16px;
+  }
+
+  &--size-sm {
+    --v-switch-size: 18px;
+  }
+
+  &--size-base {
+    --v-switch-size: 20px;
+  }
+
+  &--size-lg {
+    --v-switch-size: 24px;
+  }
+
+  &--size-xl {
+    --v-switch-size: 28px;
+  }
+
+  /* states */
+  &--disabled {
+    &__track {
+      @apply bg-gray-300;
+    }
+
+    &__thumb {
+      @apply bg-gray-500;
+    }
+  }
+
+  &--readonly {
+    &__track {
+      @apply bg-gray-200;
+    }
+
+    &__thumb {
+      @apply bg-gray-500;
+    }
+  }
+
+  &--indeterminate {
+    &__track {
+      @apply bg-gray-200;
+    }
+
+    &__thumb {
+      @apply bg-gray-500;
+    }
+  }
+}

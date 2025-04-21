@@ -1,0 +1,61 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.v-heading {
+  @apply font-medium;
+}
+
+.v-heading-1 {
+  @apply text-3xl tracking-tight sm:text-5xl;
+}
+
+.v-heading-2 {
+  @apply text-2xl tracking-tight sm:text-4xl;
+}
+
+.v-heading-3 {
+  @apply text-xl tracking-tight;
+}
+
+.v-heading-4 {
+  @apply text-lg;
+}
+
+.v-heading-5 {
+  @apply text-lg tracking-tight;
+}
+
+.v-heading-6 {
+  @apply text-base tracking-tight;
+}
+
+/* --- */
+
+.v-body-1 {
+  @apply text-lg leading-8;
+}
+
+.v-body-2 {
+  @apply text-base;
+}
+
+.v-subtitle-1 {
+  @apply text-xl font-bold tracking-tight;
+}
+
+.v-subtitle-2 {
+  @apply text-base font-bold tracking-tight;
+}
+
+.v-caption {
+  @apply text-sm;
+}
+
+.v-overline {
+  @apply text-xs font-bold uppercase tracking-widest;
+}
+
+.v-blockquote {
+  @apply text-lg font-medium;
+}

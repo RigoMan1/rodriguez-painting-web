@@ -1,0 +1,11 @@
+.v-select {
+  cursor: pointer;
+}
+
+.v-select input {
+  opacity: 1;
+  width: 100%;
+  transition: none;
+  pointer-events: none;
+  caret-color: transparent;
+}

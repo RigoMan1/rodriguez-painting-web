@@ -1,0 +1,6 @@
+.v-app-bar {
+  transition: 0.2s var(--v-ease-in-out);
+  transition-property: height, width, transform, max-width, left, right, top, bottom,
+    box-shadow;
+  opacity: var(--v-app-bar-opacity, 1);
+}

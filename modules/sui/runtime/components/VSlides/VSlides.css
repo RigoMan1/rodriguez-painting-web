@@ -1,0 +1,71 @@
+/* Main Carousel Styles */
+.v-slides {
+  overflow: hidden;
+}
+
+.v-slides__container {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  position: relative;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+
+/* Transition Animations */
+.v-slides-x-transition-enter-active,
+.v-slides-x-transition-leave-active,
+.v-slides-x-reverse-transition-enter-active,
+.v-slides-x-reverse-transition-leave-active,
+.v-slides-y-transition-enter-active,
+.v-slides-y-transition-leave-active,
+.v-slides-y-reverse-transition-enter-active,
+.v-slides-y-reverse-transition-leave-active {
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+}
+
+/* Transition Leave Styles */
+.v-slides-x-transition-leave-from,
+.v-slides-x-transition-leave-to,
+.v-slides-x-reverse-transition-leave-from,
+.v-slides-x-reverse-transition-leave-to,
+.v-slides-y-transition-leave-from,
+.v-slides-y-transition-leave-to,
+.v-slides-y-reverse-transition-leave-from,
+.v-slides-y-reverse-transition-leave-to {
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+}
+
+/* Transition Enter Styles */
+.v-slides-x-transition-enter-from {
+  transform: translateX(100%);
+}
+
+.v-slides-x-transition-leave-to {
+  transform: translateX(-100%);
+}
+
+.v-slides-x-reverse-transition-enter-from {
+  transform: translateX(-100%);
+}
+
+.v-slides-x-reverse-transition-leave-to {
+  transform: translateX(100%);
+}
+
+.v-slides-y-transition-enter-from {
+  transform: translateY(100%);
+}
+
+.v-slides-y-transition-leave-to {
+  transform: translateY(-100%);
+}
+
+.v-slides-y-reverse-transition-enter-from {
+  transform: translateY(-100%);
+}
+
+.v-slides-y-reverse-transition-leave-to {
+  transform: translateY(100%);
+}
