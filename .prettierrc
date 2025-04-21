@@ -1,0 +1,19 @@
+{
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "singleAttributePerLine": true,
+  "bracketSameLine": false,
+  "arrowParens": "always",
+  "vueIndentScriptAndStyle": false,
+  "printWidth": 90,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "ignore",
+  "pluginSearchDirs": false,
+  "plugins": [
+    "prettier-plugin-classnames",
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-merge"
+  ]
+}
