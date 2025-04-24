@@ -18,8 +18,8 @@ const highlights = [
         sub-heading="Our Vision"
       />
 
-      <div class="mt-8 md:max-w-lg">
-        <v-text class="body-2">
+      <div class="mt-4 md:max-w-lg">
+        <v-text variant="body-2" class="mt-2 text-gray-600">
           Rodriguez Painting offers a full service of interior and exterior painting and
           parking lot striping. We focus on individual service and attention to detail
           resulting in professional finishes. We are consistently working to better our

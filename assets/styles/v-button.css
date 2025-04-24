@@ -30,25 +30,25 @@
 
   &--size-sm {
     @apply h-8 px-2 text-sm;
-    --v-icon-size: 1.25rem;
+    --v-icon-size: 1.125rem;
     --v-button-scale: 2rem;
   }
 
   &--size-base {
     @apply h-10 px-3 text-sm;
-    --v-icon-size: 1.5rem;
+    --v-icon-size: 1.25rem;
     --v-button-scale: 2.5rem;
   }
 
   &--size-lg {
     @apply h-12 px-4 text-base;
-    --v-icon-size: 2rem;
+    --v-icon-size: 1.5rem;
     --v-button-scale: 3rem;
   }
 
   &--size-xl {
     @apply h-14 px-5 text-lg;
-    --v-icon-size: 2.5rem;
+    --v-icon-size: 1.75rem;
     --v-button-scale: 3.5rem;
   }
 

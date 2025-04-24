@@ -1,7 +1,8 @@
 <script setup lang="ts"></script>
 <template>
   <div
-    class="grid max-w-7xl grid-cols-1 overflow-hidden rounded-none bg-gradient-to-r from-primary-500 to-primary-500/85 px-4 py-12 shadow-lg sm:mx-auto xl:rounded-xl md:grid-cols-12 md:px-8"
+    class="grid max-w-7xl grid-cols-1 overflow-hidden rounded-none bg-gradient-to-r from-primary-500
+      to-primary-500/85 px-4 py-12 shadow-lg sm:mx-auto md:grid-cols-12 md:px-8 xl:rounded-xl"
   >
     <!-- Text block -->
     <div
@@ -32,6 +33,8 @@
       <v-button
         size="lg"
         variant="outlined"
+        href="tel:2142416937"
+        prepend-icon="i-mdi-phone"
       >
         Call Us
       </v-button>

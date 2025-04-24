@@ -4,17 +4,25 @@
     style="background-image: url('/images/hero.jpg')"
   >
     <!-- Dark overlay -->
+    <!-- bg-primary-900/50 -->
     <div class="absolute inset-0 bg-black/60" />
 
     <div class="relative mx-auto px-6 py-16 text-center text-white">
       <div class="mx-auto mt-32 max-w-3xl">
-        <v-heading1 class="leading-tight">
-          Rodriguez Painting & Parking Lot Striping Services
+        <!-- <v-heading1 class="font-semibold leading-normal">
+          Rodriguez
+          <span class="rounded bg-primary-500/90 px-2">Painting</span>
+          &
+          <br />
+          <span class="rounded bg-primary-500/90 px-2">Parking Lot Striping</span>
+          Services
+        </v-heading1> -->
+
+        <v-heading1 class="text-4xl sm:text-6xl">
+          <span>Rodriguez</span>
+          <br />
+          <span class="rounded bg-primary-500/90 px-2">Painting & Striping Services</span>
         </v-heading1>
-        <!-- <v-text class="mt-8 text-gray-200">
-          We are a full service painting company specializing in interior and exterior
-          painting and parking lot striping.
-        </v-text> -->
 
         <div class="mt-6 flex justify-center gap-1 sm:gap-3">
           <v-button

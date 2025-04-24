@@ -160,7 +160,7 @@ onMounted(() => {
 
     <!-- Right side (details + image + list) -->
     <div class="h-auto w-full space-y-4 md:h-full md:w-1/2 md:space-y-6">
-      <v-text>
+      <v-text variant="body-2" class="mt-2 text-gray-600">
         {{ activeService?.description }}
       </v-text>
 

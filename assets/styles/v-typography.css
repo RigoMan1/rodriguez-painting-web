@@ -1,9 +1,13 @@
+/* Rubik for heading */
+/* work sans for body */
 body {
-  font-family: 'Open Sans', sans-serif;
+  /* font-family: 'DM Sans', sans-serif; */
+  font-family: 'Inter', sans-serif;
 }
 
 .v-heading {
-  @apply font-medium;
+  @apply font-medium !leading-snug;
+  font-family: 'Rubik', sans-serif;
 }
 
 .v-heading-1 {
@@ -33,11 +37,11 @@ body {
 /* --- */
 
 .v-body-1 {
-  @apply text-lg leading-8;
+  @apply text-lg leading-relaxed;
 }
 
 .v-body-2 {
-  @apply text-base;
+  @apply text-base leading-relaxed;
 }
 
 .v-subtitle-1 {

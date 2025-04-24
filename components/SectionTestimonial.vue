@@ -76,10 +76,10 @@ onBeforeUnmount(() => {
         title="What Our Clients Say"
         sub-heading="Testimonials"
       />
-      <p class="mt-2 text-gray-600">
+      <v-text variant="body-2" class="mt-2 text-gray-600">
         We are proud to have received numerous positive reviews from our clients. Here are
         just a few of the many testimonials we have received.
-      </p>
+      </v-text>
     </div>
 
     <div class="mt-20 flex flex-wrap justify-center gap-4">
