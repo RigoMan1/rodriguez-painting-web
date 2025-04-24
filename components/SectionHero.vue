@@ -27,12 +27,13 @@
         <div class="mt-6 flex justify-center gap-1 sm:gap-3">
           <v-button
             variant="outlined"
+            label="Explore Our Services"
             size="lg"
-          >
-            Explore Our Services
-          </v-button>
+            href="#services"
+          />
+
           <v-button
-            variant="outlined"
+            color="secondary"
             label="Get a Quote"
             size="lg"
           />
