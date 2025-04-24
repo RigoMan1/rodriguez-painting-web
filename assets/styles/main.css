@@ -3,12 +3,6 @@
 @import './v-field.css';
 @import './v-switch.css';
 
-html {
-  color-scheme: dark;
-  background-color: #17181e;
-  color: #e1e3eb;
-}
-
 .bd,
 [bd] {
   border: 1px solid magenta !important;

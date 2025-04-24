@@ -53,10 +53,7 @@
   }
 
   &--color-primary {
-    /* @apply bg-zinc-100 text-zinc-800; */
-    /* @apply bg-blue-500 text-white; */
-    /* @apply bg-zinc-100; */
-    @apply bg-primary-100;
+    @apply bg-primary-500 !text-primary-100;
 
     &.v-button--variant-text {
       @apply hover:bg-primary-500/20;
