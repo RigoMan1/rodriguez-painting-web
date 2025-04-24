@@ -28,14 +28,22 @@
 
         <div class="flex items-center space-x-12">
           <nuxt-link to="/#services">Services</nuxt-link>
-          <nuxt-link to="/#about">About Us</nuxt-link>
-          <nuxt-link to="/#contact">Contact Us</nuxt-link>
+          <nuxt-link to="/#about">About</nuxt-link>
+          <nuxt-link to="/#contact">Contact</nuxt-link>
+
           <v-button
+            class="hidden sm:inline-flex"
             href="tel:2142416937"
             prepend-icon="i-mdi-phone"
           >
             (214) 241-6937
           </v-button>
+
+          <v-button
+            class="sm:hidden"
+            href="tel:2142416937"
+            icon="i-mdi-phone"
+          />
         </div>
       </div>
     </div>

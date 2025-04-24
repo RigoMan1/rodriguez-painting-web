@@ -6,7 +6,7 @@
     <!-- Dark overlay -->
     <div class="absolute inset-0 bg-black/60" />
 
-    <div class="container relative mx-auto px-6 py-16 text-center text-white">
+    <div class="relative mx-auto px-6 py-16 text-center text-white">
       <div class="mx-auto mt-32 max-w-3xl">
         <v-heading1 class="leading-tight">
           Rodriguez Painting & Parking Lot Striping Services
@@ -16,7 +16,7 @@
           painting and parking lot striping.
         </v-text> -->
 
-        <div class="mt-6 space-x-3">
+        <div class="mt-6 flex justify-center gap-1 sm:gap-3">
           <v-button
             variant="outlined"
             size="lg"
