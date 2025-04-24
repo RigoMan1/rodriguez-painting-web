@@ -9,5 +9,5 @@
 }
 
 .container {
-  @apply px-2 sm:px-0;
+  @apply px-3 sm:px-0;
 }

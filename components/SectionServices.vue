@@ -105,7 +105,7 @@ onMounted(() => {
     class="flex h-auto flex-col gap-8 rounded-lg md:h-[46rem] md:flex-row md:gap-20"
   >
     <!-- Left side (heading + grid) -->
-    <div class="w-full  md:w-1/2 ">
+    <div class="w-full md:w-1/2">
       <content-heading
         class="text-center lg:text-left"
         :title="sectionContent.title"
@@ -159,7 +159,7 @@ onMounted(() => {
     </div>
 
     <!-- Right side (details + image + list) -->
-    <div class="h-auto w-full space-y-4 p-4 md:h-full md:w-1/2 md:space-y-6 md:p-8">
+    <div class="h-auto w-full space-y-4 md:h-full md:w-1/2 md:space-y-6">
       <v-text>
         {{ activeService?.description }}
       </v-text>

@@ -35,7 +35,7 @@ const highlights = [
           >
             <v-icon
               name="i-mdi-check-circle"
-              class="text-lg text-primary-500"
+              class="flex-shrink-0 text-lg text-primary-500 "
             />
             <span>{{ feature }}</span>
           </li>
@@ -47,7 +47,8 @@ const highlights = [
     <div class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 md:w-1/2 md:grid-cols-12">
       <!-- first two images half-width at sm/md, full-width on xs -->
       <div
-        class="col-span-1 h-48 overflow-hidden rounded-lg shadow-md sm:col-span-1 sm:h-56 md:col-span-6 md:h-80"
+        class="col-span-1 h-48 overflow-hidden rounded-lg shadow-md sm:col-span-1 sm:h-56 md:col-span-6
+          md:h-80"
       >
         <img
           src="/images/about-3.jpg"
@@ -57,7 +58,8 @@ const highlights = [
       </div>
 
       <div
-        class="col-span-1 h-48 overflow-hidden rounded-lg shadow-md sm:col-span-1 sm:h-56 md:col-span-6 md:h-80"
+        class="col-span-1 h-48 overflow-hidden rounded-lg shadow-md sm:col-span-1 sm:h-56 md:col-span-6
+          md:h-80"
       >
         <img
           src="/images/about-2.jpg"
@@ -68,7 +70,8 @@ const highlights = [
 
       <!-- full-width third image -->
       <div
-        class="col-span-1 h-48 overflow-hidden rounded-lg shadow-md sm:col-span-2 sm:h-56 md:col-span-12 md:h-80"
+        class="col-span-1 h-48 overflow-hidden rounded-lg shadow-md sm:col-span-2 sm:h-56 md:col-span-12
+          md:h-80"
       >
         <img
           src="/images/about-1.jpg"
